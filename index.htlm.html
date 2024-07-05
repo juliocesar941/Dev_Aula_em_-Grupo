@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Web</title>
+
+                             <!--LINK IMG DO GOOGLE-->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,
+wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Segurança Residencial</h1>
+        <span class="material-symbols-outlined">
+            video_camera_front
+            </span>
+
+    </header>
+    <nav>
+        <a href="#controle">Controle de Acesso</a>
+        <a href="#cameras">Câmeras</a>
+        <a href="#interfone">Interfone</a>
+        <a href="#incendio">Incêndio</a>
+        <a href="#contato">Contato</a>
+        <a href="/formularios.html">Login</a>
+        <a href="#menu" class="menu-icon" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </nav>
+    <div id="menu" class="menu-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <section id="controle">
+        <h2>Controle de Acesso</h2>
+        <p>Descrição e informações sobre o controle de acesso.</p>
+        <img src="/imagens/facial.jfif"     width="250" height="250" alt="pera">
+    </section>
+    <section id="cameras">
+        <h2>Câmeras</h2>
+        <p>Informações sobre as câmeras de segurança.</p>
+        <img src="/imagens/speed.jfif" width="250" height="250" alt="">
+    </section>
+    <section id="interfone">
+        <h2>Interfone</h2>
+        <p>Como funciona o sistema de interfone.</p>
+    </section>
+    <section id="incendio">
+        <h2>Incêndio</h2>
+        <p>Medidas de segurança contra incêndios.</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Formulário de contato ou informações de contato.</p>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Segurança Residencial. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para alternar a visibilidade do menu responsivo
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
